@@ -20,5 +20,3 @@ samples, guidance on mobile development, and a full API reference.
 ### About This project
 
 ![Preview](https://github.com/patbi/flutter-dart-public-work/blob/main/myapp/assets/images/flutternavbar.PNG)
-
-Flutter Navbar
