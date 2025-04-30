@@ -21,7 +21,7 @@ samples, guidance on mobile development, and a full API reference.
 
 [![Product Name Screen Shot][product-screenshot]]()
 
-Flutter Navbar
+Flutter Navbar.
 
 
 
