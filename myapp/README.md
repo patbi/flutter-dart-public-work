@@ -19,11 +19,6 @@ samples, guidance on mobile development, and a full API reference.
 <!-- ABOUT THE PROJECT PayWise -->
 ### About This project
 
-[![Product Name Screen Shot][product-screenshot]]()
+[![App Platorm](https://github.com/patbi/flutter-dart-public-work/blob/main/myapp/assets/images/flutternavbar.png)]()
 
-Flutter Navbar.
-
-
-
-
-[product-screenshot]: assets/images/flutternavbar.png
+Flutter Navbar
