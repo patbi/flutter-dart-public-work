@@ -4,7 +4,11 @@ void main() {
   runApp(const MyApp());
 }
 
-
+//stateless
+//material app
+//scaffold
+//appbar
+//navbar
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,56 +17,36 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple, brightness: Brightness.dark,),
-        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.teal,
+          brightness: Brightness.dark,
+        ), // ColorScheme.fromSeed
+      ), // ThemeData
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Flutter code'),
+          centerTitle: true,
+          leading: Icon(Icons.login),
+          actions: [
+            Text('shdgsdhshdg'),
+            Icon(Icons.login),
+          ],
+          backgroundColor: Colors.teal,
+        ), // AppBar
+        bottomNavigationBar: NavigationBar(
+          destinations: [
+            NavigationDestination(
+              icon: Icon(Icons.home), 
+              label: 'Home',
+            ), // NavigationDestination
+             NavigationDestination(
+              icon: Icon(Icons.home), 
+              label: 'Home',
+            ),
+          ],
+        ), // NavigationBar
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-        leading: Icon(Icons.notification_add, color: Colors.amber,),
-      ),
-      body: Wrap(children: [
-        Text('fhbfdjfbdbfjdbf'),
-        Text('fhbfdjfbdbfjdbf'),
-        Text('fhbfdjfbdbfjdbf'),
-        Text('fhbfdjfbdbfjdbf'),
-        Text('fhbfdjfbdbfjdbf'),
-        Text('fhbfdjfbdbfjdbf'),
-        Text('fhbfdjfbdbfjdbf'),
-      ],),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), 
-    );
+    ); // MaterialApp
   }
 }
